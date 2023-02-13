@@ -7,13 +7,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Hidayah Bootstrap Template - Index</title>
+  <title>Philip Vargheese Consultancy</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static 'consultancy/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'consultancy/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href="{% static 'consultancy/img/logo/Logo_bar.png' %}" rel="icon">
+  <link href="{% static 'consultancy/img/logo/Logo_bar.png' %}" rel="apple-touch-icon">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -42,12 +42,12 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-inner-pages">
+  <header id="header" class="fixed-top header-inner-pages pt-4 pb-4">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Hidayah</a></h1>
+      <!-- <h1 class="logo"><a href="index.html">Hidayah</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <a href="{% url 'home' %}" class="logo"><img src="{% static 'consultancy/img/logo/Wordmark_White.png' %}" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
