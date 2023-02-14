@@ -7,13 +7,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Hidayah Bootstrap Template - Index</title>
+  <title>Philip Vargheese Consultancy</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static 'consultancy/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'consultancy/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href="{% static 'consultancy/img/logo/Logo_bar.png' %}" rel="icon">
+  <link href="{% static 'consultancy/img/logo/Logo_bar.png' %}" rel="apple-touch-icon">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -42,12 +42,12 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-inner-pages">
+  <header id="header" class="fixed-top header-inner-pages pt-4 pb-4">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Hidayah</a></h1>
+      <!-- <h1 class="logo"><a href="index.html">Hidayah</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <a href="{% url 'home' %}" class="logo"><img src="{% static 'consultancy/img/logo/Wordmark_White.png' %}" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -56,7 +56,7 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link  scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -72,7 +72,7 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -93,7 +93,14 @@
         <div class="carousel-item active" style="background-image: url('{% static 'consultancy/img/slide/slide-1.jpg' %}')">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animated fadeInDown">Welcome to <span>Hidayah</span></h2>
+              
+              <div class="d-flex justify-content-center">
+                <div class="col-10 col-lg-3 p-5">
+                  <img src="{% static 'consultancy/img/logo/Lockup_Color&Slogan.png' %}" alt="" class="img-fluid">
+                </div>
+              </div>
+
+              <h2 class="animated fadeInDown">Welcome to <span>Philip Varughese Consultancies</span></h2>
               <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
               <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
             </div>
