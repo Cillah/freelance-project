@@ -6,3 +6,5 @@ __pycache__/
 consultancy/__pycache__
 landing_page/__pycache__
 __pycache__
+static/
+media/
