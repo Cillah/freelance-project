@@ -1312,7 +1312,8 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  border-radius: 4px;
+  border-radius: 5px;
+  border-color: #428bca !important;
 }
 
 .contact .php-email-form input:focus,
