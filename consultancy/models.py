@@ -15,3 +15,25 @@ class Training(models.Model):
   def __str__(self) -> str:
     #returns the training topic name as object.
     return self.training_topic
+
+  @property
+  def getSpeakerImage(self):
+    """
+      Function to retrieve the url of the speaker image
+    """
+    try:
+      url = self.speaker_image.url
+    except:
+      url = ""
+    return url
+
+  @property
+  def getTrainingPoster(self):
+    """
+      Function to retrieve the url of the training poster
+    """
+    try:
+      url = self.training_poster.url
+    except:
+      url = ""
+    return url
