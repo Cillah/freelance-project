@@ -140,11 +140,11 @@ h6 {
 }
 
 #header .logo a {
-  color: #fff;
+  color: #fbf5f5;
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 @media (max-width: 992px) {
@@ -302,7 +302,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(34, 39, 43, 0.9);
+  background: rgba(49, 54, 42, 0.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -322,7 +322,7 @@ h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #f3ecec;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -337,7 +337,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #428bca;
+  color: #ca4269;
 }
 
 .navbar-mobile .getstarted,
@@ -354,7 +354,7 @@ h6 {
   opacity: 1;
   visibility: visible;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0px 0px 30px rgba(200, 181, 89, 0.63);
 }
 
 .navbar-mobile .dropdown ul li {
@@ -386,7 +386,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background-color: rgba(34, 39, 43, 0.8);
+  background-color: rgba(30, 37, 42, 0.8);
   overflow: hidden;
   position: relative;
 }
@@ -407,7 +407,7 @@ h6 {
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(12, 13, 14, 0.8);
+  background-color: rgba(14, 14, 14, 0.505);
 }
 
 #hero .carousel-container {
@@ -587,7 +587,7 @@ section {
 .about .icon-boxes h3 {
   font-size: 28px;
   font-weight: 700;
-  color: #394047;
+  color: #273038;
   margin-bottom: 15px;
 }
 
@@ -693,10 +693,10 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(66, 139, 202, 0.7);
+  border: 5px solid rgba(86, 95, 100, 0.7);
   top: -15%;
   left: -15%;
-  background: rgba(198, 16, 0, 0);
+  background: rgba(77, 115, 160, 0);
 }
 
 .about .play-btn:hover::after {
