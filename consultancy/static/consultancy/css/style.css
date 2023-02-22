@@ -405,6 +405,24 @@ h6 {
   bottom: 0;
 }
 
+@media (max-width: 991px) {
+  #hero .carousel-item::before {
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  #hero .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: bottom top !important;
+  }
+}
+
 #hero .carousel-item::before {
   content: "";
   background-color: rgba(14, 14, 14, 0.505);
