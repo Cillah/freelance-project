@@ -1,6 +1,6 @@
 /**
 * Template Name: Hidayah - v4.10.0
-* Template URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
+* Template UL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -524,7 +524,7 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(49, 54, 42, 0.9);
+  background: rgba(52, 57, 46, 0.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -666,7 +666,7 @@ section {
 }
 
 #hero h2 {
-  color: #fff;
+  color: #f3f2f6;
   margin-bottom: 20px;
   font-size: 48px;
   font-weight: 700;
@@ -676,7 +676,7 @@ section {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: #fff;
+  color: #f3f4f8;
 }
 
 #hero .carousel-inner .carousel-item {
@@ -792,8 +792,8 @@ section {
   font-weight: 700;
   padding: 8px 20px;
   margin: 0;
-  background: #f5f9fc;
-  color: #428bca;
+  background: #d8e2ea;
+  color: #528dc1;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -812,12 +812,12 @@ section {
 .section-title p {
   margin: 15px auto 0 auto;
   font-weight: 500;
-  color: #919191;
+  color: #181515;
 }
 
 @media (min-width: 1024px) {
   .section-title p {
-    width: 50%;
+    width: 70%;
   }
 }
 
@@ -1385,7 +1385,7 @@ section {
 .team .member {
   text-align: center;
   margin-bottom: 20px;
-  background: #343a40;
+  background: #0c0c0c;
   position: relative;
   overflow: hidden;
   border-radius: 4px;
@@ -1450,7 +1450,7 @@ section {
 }
 
 .team .member:hover .member-info {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(62, 52, 52, 0) 100%);
   opacity: 1;
   transition: 0.4s;
 }
@@ -2033,3 +2033,18 @@ section {
   gap: 50px !important;
 }
 
+
+
+
+.back-to-top-whatsapp {
+  position: fixed;
+  visibility: visible;
+  right: 15px;
+  bottom: 15px;
+  background: solid white !important;
+  z-index: 99999;
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
