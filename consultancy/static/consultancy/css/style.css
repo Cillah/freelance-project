@@ -647,7 +647,7 @@ section {
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(14, 14, 14, 0.505);
+  background-color: rgba(35, 53, 133, 0.556);
 }
 
 #hero .carousel-container {
@@ -792,8 +792,8 @@ section {
   font-weight: 700;
   padding: 8px 20px;
   margin: 0;
-  background: #d8e2ea;
-  color: #528dc1;
+  background: #f5f9fc;
+  color: #164873;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
