@@ -696,7 +696,7 @@
               </div>
 
               <div class="col-lg-6">
-                <form action="contact/" method="POST" role="form" class="php-email-form">
+                <form action="contact/" method="POST" role="form" id="contactForm" class="php-email-form">
                   {% csrf_token %}
                   <div class="row">
                     <div class="form-group">
@@ -719,7 +719,7 @@
                   <div class="my-3">
                     <div class="loading">Loading</div>
                     <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <div class="sent-message">Form has been successfully submitted</div>
                   </div>
                   <div class="text-center"><button type="submit">Send Message</button></div>
                 </form>
@@ -830,6 +830,7 @@
   <a href="#" class="back-to-top-whatsapp d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp text-success h2"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="{% static 'consultancy/vendor/purecounter/purecounter_vanilla.js' %}"></script>
   <script src="{% static 'consultancy/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'consultancy/vendor/glightbox/js/glightbox.min.js' %}"></script>

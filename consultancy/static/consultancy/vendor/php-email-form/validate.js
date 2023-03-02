@@ -56,11 +56,13 @@
       headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
     .then(response => {
-      return response.text();
+      return response.json();
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      console.log(data)
+      if (data.status == 'Success') {
+        console.log(data)
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
@@ -68,6 +70,7 @@
       }
     })
     .catch((error) => {
+      console.log(error)
       displayError(thisForm, error);
     });
   }

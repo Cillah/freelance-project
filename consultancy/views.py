@@ -1,6 +1,13 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
+from django.core.mail import send_mail
+from django.contrib import messages
 from . import forms
+from dotenv import load_dotenv
+import os
+from django.http import JsonResponse
+
+load_dotenv()
 
 # Create your views here.
 
@@ -21,6 +28,14 @@ def contact(request):
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
             subject = form.cleaned_data['subject']
-            message = form.cleaned_data['message'] 
+            message = form.cleaned_data['message']
+            send_mail(subject=subject,message=message,from_email=None,recipient_list=[os.getenv('DEFAULT_FROM_EMAIL')],fail_silently=False)
+            return JsonResponse({
+                'status':'Success',
+                'message' : 'Mail has been successfully sent'
+            })
 
-    return redirect("home")
+    return JsonResponse({
+        'status':'Failed',
+        'message' : 'Mail sending has been failed'
+    })
