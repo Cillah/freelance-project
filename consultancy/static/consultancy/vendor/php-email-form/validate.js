@@ -71,6 +71,7 @@
     })
     .catch((error) => {
       console.log(error)
+      error = "Unable to submit the form, try again."
       displayError(thisForm, error);
     });
   }
