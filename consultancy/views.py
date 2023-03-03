@@ -6,6 +6,7 @@ from . import forms
 from dotenv import load_dotenv
 import os
 from django.http import JsonResponse
+from consultancy.models import Training
 
 load_dotenv()
 
@@ -15,7 +16,10 @@ def home(request):
     """
      Returns the home page of the application.
     """
-    return render(request,'consultancy/index.html')
+    trainings = Training.objects.all()
+    data = {}
+    data['trainings'] = trainings
+    return render(request,'consultancy/index.html',context=data)
 
 def contact(request):
     """
