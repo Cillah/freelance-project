@@ -33,7 +33,18 @@ def contact(request):
             email = form.cleaned_data['email']
             subject = form.cleaned_data['subject']
             message = form.cleaned_data['message']
-            send_mail(subject=subject,message=message,from_email=None,recipient_list=[os.getenv('DEFAULT_FROM_EMAIL')],fail_silently=False)
+
+            content = f"""Dear Site Owner,
+            A new submission has been received from your website's contact form. The details of the submission are as follows:
+
+            Name: {name}
+            Email: {email}
+            Message: {message}
+
+            Please take the necessary actions to respond to the inquiry as soon as possible.
+            """
+
+            send_mail(subject=subject,message=content,from_email=None,recipient_list=[os.getenv('DEFAULT_FROM_EMAIL')],fail_silently=False)
             return JsonResponse({
                 'status':'Success',
                 'message' : 'Mail has been successfully sent'
