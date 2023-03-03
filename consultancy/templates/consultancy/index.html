@@ -493,25 +493,27 @@
 
           <div class="row d-flex justify-content-center">
 
+            {% for training in trainings %}
             <div class="col-lg-6 d-flex justify-content-center">
               <div class="card" style="width: 100%">
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d29ya3Nob3B8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="...">
+                <img src="{{ training.getTrainingPoster }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"><strong>Training Topic</strong></h5>
+                  <h5 class="card-title"><strong>{{ training.training_topic }}</strong></h5>
                   <div class="d-flex pt-4 pb-4">
                     <div class="col-3">
-                      <img src="{% static 'consultancy/img/testimonials/testimonials-2.jpg' %}" class="container-fluid rounded-circle pe-0 ps-0" alt="">
+                      <img src="{{ training.getSpeakerImage }}" class="container-fluid rounded-circle pe-0 ps-0" alt="">
                     </div>
                     <div class="col-9 p-4">
-                      <h5>Speaker Name</h5>
+                      <h5>{{ training.speaker }}</h5>
                     </div>
                   </div>
-                  <p class="card-text text-secondary"><i class="bi bi-calendar-date"></i> &nbsp; &nbsp; 23 January 2023</p>
-                  <p class="card-text text-secondary"><i class="bi bi-clock"></i> &nbsp; &nbsp; 08:00 AM - 12:00 PM</p>
-                  <p class="card-text">Remarks</p>
+                  <p class="card-text text-secondary"><i class="bi bi-calendar-date"></i> &nbsp; &nbsp; {{ training.date }}</p>
+                  <p class="card-text text-secondary"><i class="bi bi-clock"></i> &nbsp; &nbsp; {{ training.timings }}</p>
+                  <p class="card-text">{{ training.remarks }}</p>
                 </div>
               </div>
             </div><!-- End testimonial-item -->
+            {% endfor %}
           </div>
         </div>
       </div>
