@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG"|True)
+DEBUG = os.getenv("DEBUG")
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOST"|['127.0.0.1', 'localhost'])
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(',')
 
 if DEBUG is False:
     #for production use only
