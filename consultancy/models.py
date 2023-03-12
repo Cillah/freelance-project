@@ -10,7 +10,7 @@ class Training(models.Model):
   speaker_image = models.ImageField(max_length=200,null=True,upload_to="training_speaker")
   date = models.DateField()
   timings = models.CharField(max_length=200)
-  remarks = models.CharField(max_length=1000,null=True)
+  remarks = models.CharField(max_length=1000,null=True,blank=True)
 
   def __str__(self) -> str:
     #returns the training topic name as object.
