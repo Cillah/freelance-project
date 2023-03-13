@@ -18,7 +18,7 @@ from django.urls import path,include
 from django.conf.urls.static import static
 from django.conf import settings
 
-admin.site.site_header = 'Philip Vargheese Consultancies'
+admin.site.site_header = 'Philip Varghese Consultancies'
 #Add the below line
 admin.site.index_title = 'Trainings App'
 
