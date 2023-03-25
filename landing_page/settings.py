@@ -31,9 +31,9 @@ DEBUG = os.getenv("DEBUG")
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(',')
 
-if DEBUG is False:
-    #for production use only
-    ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+# if DEBUG is False:
+#     #for production use only
+#     ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 #cookie message
